@@ -1,0 +1,6 @@
+use_frameworks!
+target 'RRCMNetwork_Tests' do
+  pod 'RRCMNetwork', :path => '../'
+  
+  
+end
