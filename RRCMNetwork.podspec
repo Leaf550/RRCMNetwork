@@ -27,7 +27,8 @@ TODO: Add long description of the pod here.
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'fyhNB' => '1374872604@qq.com' }
   s.source           = { :git => 'https://github.com/fyhNB/RRCMNetwork.git', :tag => s.version.to_s }
-
+  
+  s.swift_version = '5.0'
   s.ios.deployment_target = '11.0'
 
   s.source_files = 'RRCMNetwork/Classes/**/*'
