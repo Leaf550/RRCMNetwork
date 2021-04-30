@@ -1,0 +1,6 @@
+framework module RRCMNetwork {
+  umbrella header "RRCMNetwork-umbrella.h"
+
+  export *
+  module * { export * }
+}

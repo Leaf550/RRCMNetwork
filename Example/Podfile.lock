@@ -1,0 +1,31 @@
+PODS:
+  - Alamofire (4.9.1)
+  - RRCMNetwork (0.0.1):
+    - Alamofire (= 4.9.1)
+    - RxSwift (= 5.1.1)
+    - SwiftyJSON (= 4.0.0)
+  - RxSwift (5.1.1)
+  - SwiftyJSON (4.0.0)
+
+DEPENDENCIES:
+  - RRCMNetwork (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - RxSwift
+    - SwiftyJSON
+
+EXTERNAL SOURCES:
+  RRCMNetwork:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  RRCMNetwork: bcb85156860a8f3a0fb43415298596cac0d44e01
+  RxSwift: 81470a2074fa8780320ea5fe4102807cb7118178
+  SwiftyJSON: 070dabdcb1beb81b247c65ffa3a79dbbfb3b48aa
+
+PODFILE CHECKSUM: 6637ccb5a0fc5beebb5decf159cb8ec6bbd4fe0a
+
+COCOAPODS: 1.9.1
