@@ -1,0 +1,35 @@
+{
+  "name": "RRCMNetwork",
+  "version": "0.0.3",
+  "summary": "掌上重邮网络库",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/fyhNB/RRCMNetwork",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "fyhNB": "1374872604@qq.com"
+  },
+  "source": {
+    "git": "https://github.com/fyhNB/RRCMNetwork.git",
+    "tag": "0.0.3"
+  },
+  "swift_versions": "5.0",
+  "platforms": {
+    "ios": "11.0"
+  },
+  "source_files": "RRCMNetwork/Classes/**/*",
+  "dependencies": {
+    "Alamofire": [
+      "4.9.1"
+    ],
+    "RxSwift": [
+      "5.1.1"
+    ],
+    "SwiftyJSON": [
+      "4.0.0"
+    ]
+  },
+  "swift_version": "5.0"
+}

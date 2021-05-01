@@ -7,17 +7,40 @@
 //
 
 import UIKit
+import RRCMNetwork
+import RxSwift
+
+struct Student: Codable {
+    let name: String
+    let age: Int
+    let school: String
+    
+    static let request = RRCMNetworkRequest(path: "/mock/dcfc39aa3ea22338c24e2696da6aa9ad/AlamofireTest/student", method: .get, parameters: nil, headers: nil)
+}
 
 class ViewController: UIViewController {
-
+//    https://www.fastmock.site/mock/dcfc39aa3ea22338c24e2696da6aa9ad/AlamofireTest/student
+    
+    let network = RRCMNetwork(baseurl: "https://www.fastmock.site")
+    let disposeBag = DisposeBag()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-    }
+        
+        network
+            .requestData(Student.request, type: Student.self)
+            .subscribe { (stu) in
+                print(stu.name)
+                print(stu.age)
+                print(stu.school)
+        } onError: { (err) in
+            print(err)
+        } onCompleted: {
+            print("completed")
+        } onDisposed: {
+            print("disposed")
+        }.disposed(by: disposeBag)
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 
 }
